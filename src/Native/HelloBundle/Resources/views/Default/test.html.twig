@@ -1,0 +1,18 @@
+<form class="navbar-search pull-right" action="" method="POST">
+
+    <input class="span2" type="text" placeholder="Email" name="adresse">
+
+
+
+    <button type="submit" class="btn btn-primary">Ok</button>
+
+</form>
+
+{% block body %}
+    {% for item in result %}
+        <br>
+        <br>
+
+        {{ item.nom }} {{item.content}}
+    {% endfor %}
+{% endblock %}
